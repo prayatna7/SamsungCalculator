@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="body">
+        <div class="calc">
+            <div class="display">
+                <input id="screen">
+                <input id="result">
+            </div>
+            <div class="keys">
+                <div id="row1">
+                <div class="bt1"><button onclick="clearScreen()" class="roww1" id="clear">C</button> </div> 
+                <div class="bt1"><button onclick="brackets()" class="roww1" id="op">()</button></div>
+                <div class="bt1"><button onclick="inDisplay('%')" class="roww1" id="op" >%</button></div>
+                <div class="bt1"><button onclick="inDisplay('/')" class="roww1" id="op" >÷</button> </div>      
+                </div>
+                <div id="row2">
+                <div class="bt2"><button onclick="inDisplay('7')" class="row2" >7</button></div>
+                <div class="bt2"><button onclick="inDisplay('8')" class="row2" >8</button></div>
+                <div class="bt2"><button onclick="inDisplay('9')" class="row2" >9</button></div>
+                <div class="bt2"><button onclick="inDisplay('*')" class="row2" id="op" >x</button></div>
+                </div>
+                <div id="row3">
+                <div class="bt3"><button onclick="inDisplay('4')" class="row3" >4</button></div>
+                <div class="bt3"><button onclick="inDisplay('5')" class="row3" >5</button></div>
+                <div class="bt3"><button onclick="inDisplay('6')" class="row3" >6</button></div>
+                <div class="bt3"><button onclick="inDisplay('-')" class="row3" id="op" >-</button></div>
+                </div>
+                <div id="row4">
+                <div class="bt4"><button onclick="inDisplay('1')" class="row4" >1</button></div>
+                <div class="bt4"><button onclick="inDisplay('2')" class="row4" >2</button></div>
+                <div class="bt4"><button onclick="inDisplay('3')" class="row4" >3</button></div>
+                <div class="bt4"><button onclick="inDisplay('+')" class="row4" id="op" >+</button></div>
+                </div>
+                <div id="row5">
+                <div class="bt5"><button onclick="backspace()" class="row5">⌫</button></div>
+                <div class="bt5"><button onclick="inDisplay('0')" class="row5" >0</button></div>
+                <div class="bt5"><button onclick="inDisplay('.')" class="row5" >.</button></div>
+                <div class="bt5"><button onclick="calculate()" class="row5" id="equals_to">=</button></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>
